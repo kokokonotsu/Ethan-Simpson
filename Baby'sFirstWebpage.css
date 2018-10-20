@@ -1,0 +1,19 @@
+body{
+    color: whitesmoke;
+    background-color: dimgray;
+}
+header{
+    border-bottom: 2px solid rgb(0, 133, 0);
+    border-left: 1px solid rgba(144, 238, 144, 0.712);
+    border-right: 1px solid rgba(144, 238, 144, 0.712);
+    padding: 10px;
+    background-color: rgb(83, 83, 83);
+
+
+}
+.headerDiv{
+    font-size: 300%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    
+}
