@@ -9,6 +9,24 @@
     <script src="main.js"></script>
 </head>
 <body>
-    
-</body>
+        <header>
+            <div>
+                <div class="headerDiv">
+                    <a href="#Home"><img src="Home_Banner.png" alt="Hello_and_Welcome,_Friend" width="600px" height="80px"></a>
+                </div>
+            </div>
+        </header>
+        <div>
+            <h2 class="navBar">
+                <div>
+                <ul>
+                    <li><a class="active" href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                </div>
+            </h2>
+        </div>
+    </body>
 </html>
