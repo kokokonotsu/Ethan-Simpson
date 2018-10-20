@@ -1,8 +1,8 @@
-body{
+body {
     color: whitesmoke;
     background-color: dimgray;
 }
-header{
+header {
     border-bottom: 2px solid rgb(0, 133, 0);
     border-left: 1px solid rgba(144, 238, 144, 0.712);
     border-right: 1px solid rgba(144, 238, 144, 0.712);
@@ -11,9 +11,29 @@ header{
 
 
 }
-.headerDiv{
+.headerDiv {
     font-size: 300%;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     
+}
+.navBar {
+    overflow: hidden;
+    background-color: rgb(61, 61, 61);
+    
+}
+.navBar a {
+    float: left;
+    color: azure;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navBar a:hover{
+    background-color: cadetblue;
+    color: black;
 }
