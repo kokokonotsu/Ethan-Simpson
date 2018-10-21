@@ -1,9 +1,10 @@
+
 body {
+    box-sizing: border-box;
     margin: 0;
     color: whitesmoke;
     background-color: dimgray;
 }
-
 .headerDiv {
     font-size: 300%;
     font-family: 'Courier New', Courier, monospace;
@@ -13,17 +14,22 @@ body {
     border-right: 1px solid rgba(144, 238, 144, 0.712);
     background-color: rgb(83, 83, 83);
     margin: 0;
+    padding: 0px 20px 0px 20px;
     
 }
+
 .navBar {
     background-color: rgb(61, 61, 61);
+    display: block;
+    overflow: hidden;
 }
 .navBar ul{
+    display: block;
     position: sticky;
-    display: inline;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: rgb(61, 61, 61);
 }
 .navBar li{
     float: left;
@@ -35,9 +41,8 @@ body {
     color: azure;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
-    padding: 6px;
-    -webkit-transition: width 2s;
-    transition: width 2s;
+    text-align: center;
+    padding: 8px;
 
 }
 .navBar a:hover:not(.active) {
@@ -52,3 +57,26 @@ body {
     background-color: rgba(144, 238, 144, 0.945);
     transform: translate(1px, 1px);
 }
+p.stub-content{
+    
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px){
+    .column{
+        width: 100%;
+    }
+    #Home_Banner{
+        width: 300px;
+        height: 60px;
+    }
+}
+
