@@ -13,6 +13,7 @@ body {
     border-right: 1px solid rgba(144, 238, 144, 0.712);
     background-color: rgb(83, 83, 83);
     margin: 0;
+    
 }
 .navBar {
     background-color: rgb(61, 61, 61);
@@ -28,7 +29,6 @@ body {
     float: left;
     text-align: center;
     background-color: rgb(61, 61, 61);
-    
 }
 .navBar a{
     display: block;
@@ -36,14 +36,19 @@ body {
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
     padding: 6px;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+
 }
 .navBar a:hover:not(.active) {
     background-color: #111;
     color: azure;
+    transform: translate(1px, 1px);
 }
 .navBar a.active{
     background-color: rgba(144, 238, 144, 0.712);
 }
 .navBar a:hover{
     background-color: rgba(144, 238, 144, 0.945);
+    transform: translate(1px, 1px);
 }
