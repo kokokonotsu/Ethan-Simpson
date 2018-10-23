@@ -83,3 +83,16 @@ body{
     display: table;
     clear: both;
 }
+.art ul{
+    list-style-type: none;
+}
+.art li{
+    display: inline-block;
+}
+.art li img{
+    float: left;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 10px;
+}
+
