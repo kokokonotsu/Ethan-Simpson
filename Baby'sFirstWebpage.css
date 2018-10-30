@@ -42,9 +42,6 @@ backface-visibility: hidden;
     background-color: transparent;
     border: 2px solid #111;
 }
-##flip-site-inner #flip-site-prompt:hover {
-    transform: rotateX(180deg);
-}
 .flip-site-back{
     transform: rotateX(180deg);
 }
