@@ -1,0 +1,3 @@
+function editTask(params) {
+document.getElementsByClassName("far fa-edit")
+}
