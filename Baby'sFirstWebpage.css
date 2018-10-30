@@ -7,7 +7,7 @@ body{
     background-color:rgb(236, 236, 236);
 }
 #flip-site{
-background-color: pink;
+background-color: transparent;
 width: 100%;
 height: 1080px;
 perspective: 1000px;
@@ -32,7 +32,7 @@ backface-visibility: hidden;
     justify-content: center;
     flex-direction: column;
     background-size: cover;
-    background-image: url('Assets/Minimalist Color Palette.jpg');
+    background-image: url('Assets/Minimalist\ Mountains.png');
 }
 #flip-site-prompt{
     font-size: 5em;
@@ -42,9 +42,9 @@ backface-visibility: hidden;
     background-color: transparent;
     border: 2px solid #111;
 }
-/*.flip-site-inner #flip-site-prompt:hover {
+##flip-site-inner #flip-site-prompt:hover {
     transform: rotateX(180deg);
-}*/
+}
 .flip-site-back{
     transform: rotateX(180deg);
 }
