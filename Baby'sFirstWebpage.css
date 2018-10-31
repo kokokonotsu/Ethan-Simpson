@@ -129,10 +129,18 @@ backface-visibility: hidden;
     font-size: 1em;
     font-family: "Permanent Marker", cursive;
     text-align: center;
-    background-color: #b8b8b8; 
+    text-decoration: none;
+    background-color: transparent;
     margin: 0;
     padding: 0;
     top: 0;
+}
+#banner{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 200;
+    font-size: 4em;
 }
 #searchInput{
     transition: width 0.4s ease;
