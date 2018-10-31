@@ -71,9 +71,14 @@ backface-visibility: hidden;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #818181;
+    background-color: transparent;
     position: sticky;
     bottom: 0;
+    color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-right: none;
+    border-left: none;
+
 }
 
 .link {
