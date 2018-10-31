@@ -1,7 +1,7 @@
 :root{
-    --fontColor: #f1f1f1;
+    --fontColor: #424242;
 }
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
 @font-face {
     font-family: 'foxlite_scriptregular';
     src: url('foxlite_script-webfont.woff2') format('woff2'),
@@ -48,14 +48,14 @@ backface-visibility: hidden;
 #flip-site-prompt{
     align-self: center;
     font-family: 'foxlite_scriptregular';
-    font-size: 3em;
+    font-size: 5em;
     display: inline-flex;
     font-weight: 100;
     padding: 10px;
     background-color: transparent;
-    border: 2px solid #111;
 }
 .flip-site-back{
+    font-family: "Permanent Marker", cursive;
     transform: rotateX(180deg);
 }
 .parallaxBackgroundImage{
@@ -67,19 +67,18 @@ backface-visibility: hidden;
     background-size: cover;
 }
 .navbar ul {
-    font-family: 'Courier New', Courier, monospace;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #818181;
-    
+    position: sticky;
 }
 
-.navbar li {
+.link {
     float: left;
 }
-.navbar li .search{
+.navbar .search{
     float: right;
     text-align: center;
     color: white;
@@ -110,7 +109,6 @@ backface-visibility: hidden;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    
 }
 
 .navbar .dropdown-content a {
@@ -127,17 +125,19 @@ backface-visibility: hidden;
     display: block;
 }
 .header {
-    font-size: 300%;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-family: "Permanent Marker", cursive;
     text-align: center;
     background-color: #b8b8b8; 
     margin: 0;
     padding: 0;
-    position: sticky;
     top: 0;
 }
-.search{
-    border-radius: 3px;
+
+#searchInput{
+    visibility: visible;
+    width: 0in;
+    transition: width 0.4s ease;
 }
 .mainColumn{
     /*border: 1px solid #111;*/
