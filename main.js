@@ -1,5 +1,4 @@
 var flipPrompt = document.getElementById('flip-site-prompt');
-var searchInput = document.getElementById('searchInput');
 
 function flipSite(){
     document.getElementById('flip-site-inner').style.transform = 'rotateX(180deg)';
@@ -7,6 +6,8 @@ function flipSite(){
 }
 
 function extendSearch(){
-    searchInput.style.width = '2in';
+    var searchInput = document.getElementById('searchInput');
+    searchInput.classList.toggle('searchHidden');
+    searchInput.classList.toggle('searchExtend');
     console.log('I am running');
 }

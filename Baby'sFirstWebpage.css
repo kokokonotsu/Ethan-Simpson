@@ -73,6 +73,7 @@ backface-visibility: hidden;
     overflow: hidden;
     background-color: #818181;
     position: sticky;
+    bottom: 0;
 }
 
 .link {
@@ -133,12 +134,18 @@ backface-visibility: hidden;
     padding: 0;
     top: 0;
 }
-
 #searchInput{
-    visibility: visible;
-    width: 0in;
     transition: width 0.4s ease;
 }
+.searchHidden{
+    visibility: hidden;
+    width: 0in;
+}
+.searchExtend{
+    width: 2in;
+    visibility: visible;
+}
+
 .mainColumn{
     /*border: 1px solid #111;*/
     float: left;
