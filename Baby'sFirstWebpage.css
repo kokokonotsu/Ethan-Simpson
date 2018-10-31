@@ -101,7 +101,7 @@ backface-visibility: hidden;
 }
 
 .navbar li a:hover, .dropdown:hover .dropbtn {
-    background-color: #111;
+    background-color: rgb(58, 58, 58);
 }
 
 .navbar li.dropdown {
