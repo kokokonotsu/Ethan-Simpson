@@ -1,6 +1,9 @@
 :root{
-    --fontColor: #424242;
+    --fontColor: #ffffff;
     --fontFamily: "Permanent Marker";
+    --bgColor: #ffffff10;
+    --darkBGColor: #3a3a3a25;
+    --borderColor: #ffffff10;
 }
 
 @font-face {
@@ -19,8 +22,11 @@ body{
 }
 footer{
     text-align: center;
-    background-color: transparent;
+    color: white;
+    background-color: var(--bgColor);
     font-family: var(--fontFamily), cursive;
+    border-top: 1px solid #f1f1f1;
+    padding: 10px;
 }
 html, body{
     width: 100%;
@@ -83,7 +89,6 @@ backface-visibility: hidden;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: transparent;
     position: sticky;
     bottom: 0;
@@ -115,7 +120,7 @@ backface-visibility: hidden;
 }
 
 .navbar li a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(58, 58, 58);
+    background-color: var(--darkBGColor);
 }
 
 .navbar li .dropdown{
@@ -125,21 +130,21 @@ backface-visibility: hidden;
 .navbar .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--bgColor);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .navbar .dropdown-content a {
-    color: black;
+    color: var(--fontColor);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-.navbar .dropdown-content a:hover {background-color: #f1f1f1}
+.navbar .dropdown-content a:hover {background-color: var(--darkBGColor);}
 
 .navbar .dropdown:hover .dropdown-content {
     display: block;
@@ -156,7 +161,7 @@ backface-visibility: hidden;
 }
 #banner{
     text-decoration: none;
-    color: #f1f1f1;
+    color: white;
     font-family: 'Amatic SC', cursive;
     font-weight: 200;
     font-size: 4em;
@@ -195,7 +200,7 @@ backface-visibility: hidden;
 }
 .card{
     /*background-color: white;*/
-    background-color: transparent;
+    background-color: var(--bgColor);
     padding: 20px;
     margin-top: 30px;
     display: flex;
@@ -244,7 +249,7 @@ backface-visibility: hidden;
     display: flex;
     opacity: 1;
     color: #f1f1f1;
-    background-color: transparent;
+    background-color: var(--bgColor);
     border: 1px solid #f1f1f1;
     transform: rotateY(180deg);
 }
@@ -280,7 +285,6 @@ backface-visibility: hidden;
     padding: 10px;
 }
 .stub-content{
-    margin: 10px;
 }
 #selectInput{
     padding: 10px;
