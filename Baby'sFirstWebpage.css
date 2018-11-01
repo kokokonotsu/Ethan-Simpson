@@ -4,6 +4,7 @@
     --bgColor: #ffffff10;
     --darkBGColor: #3a3a3a25;
     --borderColor: #ffffff10;
+    --blurEffect: 8px;
 }
 
 @font-face {
@@ -181,13 +182,13 @@ backface-visibility: hidden;
 .mainColumn{
     /*border: 1px solid #111;*/
     float: left;
-    width: 75%;
+    width: 75vw;
     padding: 10px;
 }
 .sideColumn{
     /*border: 1px solid #111;*/
     float: left;
-    width: 20%;
+    width: 20vw;
     padding: 10px 10px 10px 10px;
 }
 .fakeimg{
@@ -196,16 +197,18 @@ backface-visibility: hidden;
  padding: 20px 20px 20px 10px;
 }
 .cardBackgroundImage{
-    
+    filter: blur(8px);
 }
 .card{
     /*background-color: white;*/
     background-color: var(--bgColor);
     padding: 20px;
+    position: relative;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     border: 1px solid #f1f1f1;
+    backdrop-filter: blur(100px);
 }
 .cardTitle{
 
@@ -283,8 +286,6 @@ backface-visibility: hidden;
     max-width: 400px;
     max-height: 400px;
     padding: 10px;
-}
-.stub-content{
 }
 #selectInput{
     padding: 10px;
