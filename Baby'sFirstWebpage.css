@@ -85,7 +85,6 @@ backface-visibility: hidden;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: grayscale(100%);
 }
 .navbar ul {
     list-style-type: none;
