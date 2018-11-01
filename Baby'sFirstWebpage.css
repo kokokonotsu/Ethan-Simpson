@@ -133,7 +133,7 @@ backface-visibility: hidden;
     position: absolute;
     background-color: var(--bgColor);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -247,17 +247,20 @@ backface-visibility: hidden;
     background-image: url('Assets/Flip-Card-Photo.jpg');
     background-size: cover;
     opacity: 1;
-    color: #f1f1f1;
+    color: var(--fontColor);
     font-family: var(--fontFamily), cursive;
     border: 1px solid #f1f1f1;
 }
 .flip-card-back{
     display: flex;
     opacity: 1;
-    color: #f1f1f1;
+    color: var(--fontColor);
     background-color: var(--bgColor);
     border: 1px solid #f1f1f1;
     transform: rotateY(180deg);
+}
+.flip-card-back a{
+    color: var(--fontColor);
 }
 .row::after{
     content: "";
